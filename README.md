@@ -16,8 +16,8 @@ Now Bob can send a message to Alice by
 
 Aims of this program
 
-    Offers greater protection against quantum computers than asymetric encryption, therefore hopefully adds some future security.
-    Can offer higher security by offering as many layers of encryption as the user wants.
-    Provides an extra layer of security such as if an account is hacked, then if this program used, messages should not be visable.
-    Allows secure communication over insecure platform or network.
+Offers greater protection against quantum computers than asymetric encryption, therefore hopefully adds some future security.
+Can offer higher security by offering as many layers of encryption as the user wants.
+Provides an extra layer of security such as if an account is hacked, then if this program used, messages should not be visable.
+Allows secure communication over insecure platform or network.
 
