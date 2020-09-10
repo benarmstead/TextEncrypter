@@ -1,0 +1,7 @@
+Manual
+
+
+- When encrypting data, the data is automatically copied to clipboard. Allowing you to then paste this into any form of messenger for your friend to recieve and decrypt.
+
+- When decrypting data, your clipboard is automatically pasted and therefore you do not need to manually paste the cipher text. However, the contects of your clipboard no matter what, will be attempted to be decrypted.
+
