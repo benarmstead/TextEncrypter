@@ -8,11 +8,15 @@ Alice does the same and adds the same encryption keys.
 
 Now Bob can send a message to Alice by
 
-    1. Selecting her contact
-    2. Selecting Encrypt
-    3. Enters: "Hello"
-    4. Cipher text is automatically copied to Bobs clipboard.
-    5. Bob pastes this message into any messanger.
+`1. Selecting her contact`
+
+`2. Selecting Encrypt`
+
+`3. Enters: "Hello"`
+
+`4. Cipher text is automatically copied to Bobs clipboard.`
+
+`5. Bob pastes this message into any messanger.`
 
 Aims of this program
 
