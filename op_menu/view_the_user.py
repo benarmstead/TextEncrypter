@@ -32,4 +32,10 @@ def view_user():
     old_pass=eval(open("user_data/"+name+"keysbackup","r").readline())
     for c in range (len(old_pass)):
         print(old_pass[c].decode())
-    input("\n\nPress enter to continue: ")
+    try:
+        input("\n\nPress enter to continue: ")
+    except:
+        print("Error")
+        exit()
+
+

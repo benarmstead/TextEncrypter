@@ -15,8 +15,11 @@ def decrypt_last(keys,name):
     data = (pyperclip.paste()).encode()
     print("Last message: "+last+"\n")
     print(decrypt_start(keys,data))
-    input("Press enter to continue: ")
-
+    try:
+        input("Press enter to continue: ")
+    except:
+        print("Error")
+        exit()
 #decrypts the message with the appropriate keys
 def decrypt_start(keys,data):
     count=len(keys)

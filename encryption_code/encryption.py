@@ -12,7 +12,12 @@ from Crypto import Random
 #takes the keys and user name and encrypts the data, aswell as storing it (as the last message) in name+lm.enc
 #also copies cipher text to clipboard
 def encrypt_start(keys,name):
-    data = input("Encrypt: ")
+    try:
+        data = input("Encrypt: ")
+    except:
+        print("Error")
+        exit()
+
     for count in range(len(keys)):
         data = encrypt_function(keys[count],data.encode())
     file = open("user_data/"+str(name)+"lm.enc","w").write(str(data))

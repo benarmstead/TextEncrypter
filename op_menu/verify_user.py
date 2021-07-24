@@ -33,7 +33,12 @@ def verification():
     pyperclip.copy(lines)
     
     #checks hash is the same as their friends
-    check=str(input("Enter your friends result to see if they match (enter to skip): "))
+    try:
+        check=str(input("Enter your friends result to see if they match (enter to skip): "))
+    except:
+        print("Error")
+        exit()
+
     if str(check)==str(lines):
         clear_s.clr_sc()
         print("CORRECT MATCH")

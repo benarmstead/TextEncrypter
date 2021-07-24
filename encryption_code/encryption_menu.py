@@ -14,12 +14,18 @@ def crypt(name):
     keys=[]
     for x in range(len(key)):
         keys.append(key[x].encode())
-
-    menu = input('''1. Encrypt
+    
+    try:
+        menu = input('''1. Encrypt
 2. Decrypt
 3. Back to main menu
 
 : ''')
+    except:
+        print("Error")
+        exit()
+
+
     if menu == "1":
         clear_s.clr_sc()
         encryption.encrypt_start(keys,name)

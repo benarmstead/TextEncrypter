@@ -5,7 +5,13 @@ import hashlib
 
 def add_user():
     #takes user name, checks does not exist
-    name=str(input("Enter name: "))
+    try:
+        name=str(input("Enter name: "))
+    except:
+        print("Error")
+        exit()
+
+
     contacts=open("user_data/contacts","r")
     line=contacts.readline()[:-1]
     while line!="":
@@ -31,7 +37,12 @@ def add_user():
     key_num=0
     while key!="q":
         key_num+=1
-        key=input("Encryption key "+str(key_num)+" (q to exit): ")
+        try:
+            key=input("Encryption key "+str(key_num)+" (q to exit): ")
+        except:
+            print("Error")
+            exit()
+
         if key=="q":
             break
         keys.append(key.encode())

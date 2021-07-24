@@ -14,8 +14,12 @@ def home():
     (m) for manual
     (e) for exit''')
 
+    try:
+        main_menu = str(input("\n: "))
+    except:
+        print("Error")
+        exit()
 
-    main_menu = str(input("\n: "))
     try:
         if main_menu=="e":
             clear_s.clr_sc()
@@ -28,7 +32,13 @@ def home():
             clear_s.clr_sc()
             #prints the manual
             print(open("others/manual.txt","r").read())
-            input("Press enter to continue: ")
+            try:
+                input("Press enter to continue: ")
+            except:
+                print("Error")
+                exit()
+
+
 
         elif int(main_menu)<=len(cont_array):
 

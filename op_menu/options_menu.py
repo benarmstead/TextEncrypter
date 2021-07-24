@@ -7,13 +7,18 @@ import time
 #gives users options to manipulate program data
 def options():
     clear_s.clr_sc()
-    menu=input('''1. Back to main menu
+    try:
+        menu=input('''1. Back to main menu
 2. Add User
 3. Delete User
 4. View user details
 5. Verification
 
 : ''')
+    except:
+        print("Error")
+        exit()
+
     try:
 
         if menu=="1":
