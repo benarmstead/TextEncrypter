@@ -1,4 +1,8 @@
 # TextEncrypter
+
+![workflow](https://github.com/benarmstead/TextEncrypter/actions/workflows/main.yml/badge.svg)
+![workflow](https://github.com/benarmstead/TextEncrypter/actions/workflows/codeql-analysis.yml/badge.svg)
+
 Encrypts text before being sent.
 
 This program allows Bob to enter Alice as a contact.
